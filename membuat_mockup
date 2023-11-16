@@ -1,0 +1,40 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# BELAJAR MOCK-SERVER / POLIWANGI 2E
+## BELAJAR MOCK-SERVER / POLIWANGI 2E [/api/v1/search]
+
+### Get Fashion Women's Product [POST /api/v1/search{?key}]
+
+- Parameters
+
+    
+    - key: name(enum[string], optional)
+        - Default: name
+        - Members
+            - name
+            - brand
+            - price
+            - picture
+
+- Request (application/json)
+
++ Response 200 (application/json)
+
+        {
+            "data":{
+                {
+                    "name": "Small Lady Dior Bag, Black Cannage Lambskin with Gold-Finish Butterfly Studs",
+                    "brand": "Dior",
+                    "price": "115.000.000",
+                    "picture" : "https://www.dior.com/couture/ecommerce/media/catalog/product/O/H/1696331709_M0531ONHZ_M900_E01_ZHC.jpg?imwidth=1200"
+                },
+                {
+                    "name": "Mary Jane Shoes",
+                    "brand": "Channel",
+                    "price": "22.900.000",
+                    "picture" : "https://www.chanel.com/images//t_one///q_auto:good,f_auto,fl_lossy,dpr_1.1/w_840/mary-janes-white-black-patent-calfskin-grosgrain-patent-calfskin-grosgrain-packshot-artistique-vue1-g45356b15113nt688-9533306798110.jpg"
+                },
+
+            ]
+        }
